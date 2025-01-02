@@ -41,14 +41,14 @@
         <textarea
             bind:value={userInput}
             class="form-control prompt-area"
-            placeholder="TrailAdventurer nutzt die API von OpenAI gpt-4, um dir bei der Suche nach Wanderwegen zu helfen. Beschreibe deine Wanderung möglichst genau mit Ort, Kanton, Schwierigkeitslevel, Distanz, etc."
+            placeholder="TrailAdventurer nutzt die API von OpenAI GPT-4, um dir bei der Suche nach Wanderwegen zu helfen. Beschreibe deine Wanderung möglichst genau mit Ort, Kanton, Schwierigkeitslevel, Distanz, etc."
         ></textarea>
         <button
             class="btn btn-success btn-lg submit-btn"
             on:click={getHike}
             disabled={$loading}
         >
-            {#if $loading}lädt wanderwege{/if}
+            {#if $loading}lädt Wanderwege...{/if}
             {#if !$loading}Suchen{/if}
         </button>
     </div>
@@ -59,12 +59,12 @@
             <div class="hikes">
                 {#if $response.length > 0}
                     {#each $response as hike}
-                        <HikeCard {hike} />
+                        <div class="hike-card-wrapper">
+                            <HikeCard {hike} />
+                        </div>
                     {/each}
                 {:else}
-                    <p>
-                        No hikes found for your description. Please try again!
-                    </p>
+                    <p>Keine Wanderungen gefunden. Bitte versuche es erneut!</p>
                 {/if}
             </div>
         </div>
@@ -77,9 +77,10 @@
         background-size: cover;
         min-height: 100vh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
         font-family: "Roboto", sans-serif;
+        padding: 20px;
     }
 
     .card-wrapper {
@@ -88,8 +89,9 @@
         padding: 30px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         max-width: 600px;
-        width: 90%;
+        width: 100%;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .title {
@@ -126,7 +128,7 @@
     }
 
     .results {
-        margin-top: 40px;
+        width: 100%;
         text-align: center;
     }
 
@@ -141,5 +143,24 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+    }
+
+    .hike-card-wrapper {
+        flex: 1 1 calc(33% - 20px);
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        .hike-card-wrapper {
+            flex: 1 1 calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hike-card-wrapper {
+            flex: 1 1 100%;
+        }
     }
 </style>
