@@ -1,0 +1,437 @@
+[
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff13"
+        },
+        "wanderung": "Alpenüberquerung",
+        "kilometer": 42,
+        "elevation_up": 1800,
+        "elevation_down": 1500,
+        "exposedness_level": 5,
+        "TrailAdventurer_difficulty": 7,
+        "user_rating": 4.2,
+        "dauer": "120 Minuten",
+        "titelbild": "/images/swissalps.png",
+        "vertigo_safe": false,
+        "favorite": false,
+        "starting_point": [
+            46.9501,
+            8.3412
+        ],
+        "end_point": [
+            46.7011,
+            8.1285
+        ],
+        "locations": [
+            "alpen",
+            "schweiz",
+            "deutschland"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff14"
+        },
+        "wanderung": "Chinareise",
+        "kilometer": 20,
+        "elevation_up": 800,
+        "elevation_down": 600,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 5,
+        "user_rating": 3.6,
+        "dauer": "143 Minuten",
+        "titelbild": "/images/gwchina.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            39.9042,
+            116.4074
+        ],
+        "end_point": [
+            39.9142,
+            116.4274
+        ],
+        "locations": [
+            "asien"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff15"
+        },
+        "wanderung": "Neuseeland",
+        "kilometer": 12,
+        "elevation_up": 500,
+        "elevation_down": 400,
+        "exposedness_level": 2,
+        "TrailAdventurer_difficulty": 4,
+        "user_rating": 4.5,
+        "dauer": "105 Minuten",
+        "titelbild": "/images/newzealand.png",
+        "vertigo_safe": true,
+        "favorite": false,
+        "starting_point": [
+            -43.5321,
+            172.6362
+        ],
+        "end_point": [
+            -43.5325,
+            172.6325
+        ],
+        "locations": [
+            "ozeanien"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff16"
+        },
+        "wanderung": "Patagonien",
+        "kilometer": 35,
+        "elevation_up": 1200,
+        "elevation_down": 1000,
+        "exposedness_level": 4,
+        "TrailAdventurer_difficulty": 6,
+        "user_rating": 4.0,
+        "dauer": "132 Minuten",
+        "titelbild": "/images/patagonia.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            -50.9427,
+            -73.4068
+        ],
+        "end_point": [
+            -50.9512,
+            -73.4211
+        ],
+        "locations": [
+            "südamerika"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff17"
+        },
+        "wanderung": "Islandabenteuer",
+        "kilometer": 15,
+        "elevation_up": 600,
+        "elevation_down": 600,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 5,
+        "user_rating": 3.8,
+        "dauer": "117 Minuten",
+        "titelbild": "/images/iceland.png",
+        "vertigo_safe": false,
+        "favorite": false,
+        "starting_point": [
+            64.1355,
+            -21.8954
+        ],
+        "end_point": [
+            64.1389,
+            -21.8993
+        ],
+        "locations": [
+            "restlichesEuropa"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff18"
+        },
+        "wanderung": "Big Sur in California",
+        "kilometer": 18,
+        "elevation_up": 700,
+        "elevation_down": 700,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 5,
+        "user_rating": 3.9,
+        "dauer": "150 Minuten",
+        "titelbild": "/images/bigsurcali.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            36.3615,
+            -121.8563
+        ],
+        "end_point": [
+            36.3615,
+            -121.8563
+        ],
+        "locations": [
+            "nordamerika"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff19"
+        },
+        "wanderung": "Swiss Lakes Trail",
+        "kilometer": 24,
+        "elevation_up": 900,
+        "elevation_down": 850,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 6,
+        "user_rating": 4.1,
+        "dauer": "190 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": false,
+        "starting_point": [
+            46.8901,
+            8.4212
+        ],
+        "end_point": [
+            46.7205,
+            8.1593
+        ],
+        "locations": [
+            "alpen",
+            "schweiz"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff1a"
+        },
+        "wanderung": "Grand Canyon Rim",
+        "kilometer": 19,
+        "elevation_up": 650,
+        "elevation_down": 650,
+        "exposedness_level": 5,
+        "TrailAdventurer_difficulty": 7,
+        "user_rating": 4.3,
+        "dauer": "200 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            36.1069,
+            -112.1129
+        ],
+        "end_point": [
+            36.1083,
+            -112.1138
+        ],
+        "locations": [
+            "nordamerika"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff1b"
+        },
+        "wanderung": "Bavarian Forest Adventure",
+        "kilometer": 28,
+        "elevation_up": 950,
+        "elevation_down": 900,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 5,
+        "user_rating": 4.0,
+        "dauer": "240 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            48.9822,
+            13.2077
+        ],
+        "end_point": [
+            49.0155,
+            13.1333
+        ],
+        "locations": [
+            "deutschland"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff1c"
+        },
+        "wanderung": "Italian Coastline Escape",
+        "kilometer": 16,
+        "elevation_up": 450,
+        "elevation_down": 500,
+        "exposedness_level": 4,
+        "TrailAdventurer_difficulty": 5,
+        "user_rating": 4.2,
+        "dauer": "180 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": false,
+        "starting_point": [
+            44.0981,
+            9.8241
+        ],
+        "end_point": [
+            44.1005,
+            9.8055
+        ],
+        "locations": [
+            "italien"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff1d"
+        },
+        "wanderung": "Amazon Rainforest Expedition",
+        "kilometer": 32,
+        "elevation_up": 400,
+        "elevation_down": 300,
+        "exposedness_level": 2,
+        "TrailAdventurer_difficulty": 4,
+        "user_rating": 4.5,
+        "dauer": "210 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": true,
+        "favorite": false,
+        "starting_point": [
+            -3.4653,
+            -62.2159
+        ],
+        "end_point": [
+            -3.4321,
+            -62.2451
+        ],
+        "locations": [
+            "südamerika"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff1e"
+        },
+        "wanderung": "Mount Fuji Climb",
+        "kilometer": 25,
+        "elevation_up": 1400,
+        "elevation_down": 1200,
+        "exposedness_level": 5,
+        "TrailAdventurer_difficulty": 8,
+        "user_rating": 4.7,
+        "dauer": "360 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            35.3606,
+            138.7274
+        ],
+        "end_point": [
+            35.3581,
+            138.7307
+        ],
+        "locations": [
+            "asien"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff1f"
+        },
+        "wanderung": "Rocky Mountain Trail",
+        "kilometer": 45,
+        "elevation_up": 1700,
+        "elevation_down": 1500,
+        "exposedness_level": 6,
+        "TrailAdventurer_difficulty": 9,
+        "user_rating": 4.9,
+        "dauer": "480 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            39.5501,
+            -105.7821
+        ],
+        "end_point": [
+            39.5788,
+            -105.7754
+        ],
+        "locations": [
+            "nordamerika"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff20"
+        },
+        "wanderung": "Norwegian Fjords Journey",
+        "kilometer": 20,
+        "elevation_up": 700,
+        "elevation_down": 650,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 5,
+        "user_rating": 4.4,
+        "dauer": "240 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": false,
+        "starting_point": [
+            61.2291,
+            7.1260
+        ],
+        "end_point": [
+            61.2385,
+            7.1189
+        ],
+        "locations": [
+            "restlichesEuropa"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff21"
+        },
+        "wanderung": "Moroccan Desert Trek",
+        "kilometer": 30,
+        "elevation_up": 500,
+        "elevation_down": 450,
+        "exposedness_level": 2,
+        "TrailAdventurer_difficulty": 3,
+        "user_rating": 4.3,
+        "dauer": "300 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": true,
+        "favorite": false,
+        "starting_point": [
+            31.6289,
+            -7.9923
+        ],
+        "end_point": [
+            31.6597,
+            -7.9785
+        ],
+        "locations": [
+            "afrika"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "6630e72c95e12055f661ff22"
+        },
+        "wanderung": "Scottish Highlands Escape",
+        "kilometer": 25,
+        "elevation_up": 800,
+        "elevation_down": 750,
+        "exposedness_level": 3,
+        "TrailAdventurer_difficulty": 6,
+        "user_rating": 4.6,
+        "dauer": "280 Minuten",
+        "titelbild": "/images/newhike.png",
+        "vertigo_safe": false,
+        "favorite": true,
+        "starting_point": [
+            57.4796,
+            -4.2254
+        ],
+        "end_point": [
+            57.4901,
+            -4.2488
+        ],
+        "locations": [
+            "restlichesEuropa"
+        ]
+    }
+]
