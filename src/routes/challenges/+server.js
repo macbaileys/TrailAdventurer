@@ -12,8 +12,6 @@ export async function GET() {
     }
 }
 
-import { json } from '@sveltejs/kit';
-import db from '$lib/db.js';
 
 // PATCH: Fortschritt einer Challenge aktualisieren
 export async function PATCH({ request }) {
