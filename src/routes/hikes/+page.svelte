@@ -27,7 +27,7 @@
     <div class="row">
       <div class="col-12 col-md-10 offset-md-1 text-center">
         <h1 class="display-10 fw-bold text-primary mb-3">
-          TrailAdventurer: Deine WebApp zu den spektakulärsten Naturabenteuern!
+          TrailAdventurer: Deine WebApp zu den spektakulärsten Wanderungen!
         </h1>
         <p class="lead text-secondary">
           Stell dir vor, du stehst vor einer Auswahl von Wanderungen, die alle
@@ -49,8 +49,8 @@
           einem Teil einer epischen Reise.
         </p>
         <p class="fs-5 text-success fw-bold">
-          Worauf wartest du noch? Der nächste große Moment wartet bereits hinter
-          dem nächsten Gipfel! 🌄✨
+          Worauf wartest du noch? Der nächste grosse Moment wartet bereits
+          hinter dem nächsten Gipfel! 🌄✨
         </p>
       </div>
     </div>
