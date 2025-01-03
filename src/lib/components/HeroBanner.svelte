@@ -1,7 +1,9 @@
 <script>
-	export let title = 'TrailAdventurer';
-	export let subtitle = 'Entdecke die schönsten Wanderwege und erlebe die Natur hautnah!';
-	export let backgroundUrl = 'https://source.unsplash.com/1920x1080/?hiking,adventure';
+	export let title = "TrailAdventurer";
+	export let subtitle =
+		"Entdecke die schönsten Wanderwege und erlebe die Natur hautnah!";
+	export let backgroundUrl =
+		"https://source.unsplash.com/1920x1080/?hiking,adventure";
 </script>
 
 <div
@@ -41,11 +43,15 @@
 <style>
 	.hero-banner {
 		position: relative;
-		font-family: 'Roboto', sans-serif;
+		font-family: "Roboto", sans-serif;
 	}
 
 	.bg-gradient {
-		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+		background: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.7)
+		);
 	}
 
 	.text-container {

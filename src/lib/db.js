@@ -104,11 +104,106 @@ async function deleteHike(id) {
   }
   return null;
 }
-
 //////////////////////////////////////////
-// Favorites
+// Challenges
 //////////////////////////////////////////
 
+// Get all challenges
+async function getChallenges() {
+  let challenges = [];
+  try {
+    const collection = db.collection("challenges");
+
+    const query = {}; // Define query if needed
+    challenges = await collection.find(query).toArray();
+    challenges.forEach((challenge) => {
+      challenge._id = challenge._id.toString(); // Convert ObjectId to String
+    });
+  } catch (error) {
+    console.log(error);
+    // TODO: errorhandling
+  }
+  return challenges;
+}
+
+// Get challenge by id
+async function getChallenge(id) {
+  let challenge = null;
+  try {
+    const collection = db.collection("challenges");
+    const query = { _id: id }; // `_id` ist bereits ein String
+    challenge = await collection.findOne(query);
+
+    if (!challenge) {
+      console.log("Keine Challenge mit der ID " + id);
+      // TODO: errorhandling
+    }
+  } catch (error) {
+    console.log(error.message);
+  }
+  return challenge;
+}
+
+
+// Create challenge
+async function createChallenge(challenge) {
+  // Standardwerte setzen
+  challenge.progress = challenge.progress || 0; // Zahl
+  challenge.goal = challenge.goal || 1; // Zahl
+  challenge.status = challenge.status || "in_progress"; // String
+
+  try {
+    const collection = db.collection("challenges");
+    const result = await collection.insertOne(challenge);
+    return result.insertedId.toString(); // ID als String zurückgeben
+  } catch (error) {
+    console.log(error.message);
+  }
+  return null;
+}
+
+// Update challenge
+async function updateChallenge(challenge) {
+  try {
+    let id = challenge._id;
+    delete challenge._id; // `_id` darf nicht aktualisiert werden
+
+    const collection = db.collection("challenges");
+    const query = { _id: id }; // `_id` als String
+    const result = await collection.updateOne(query, { $set: challenge });
+
+    if (result.matchedCount === 0) {
+      console.log("Keine Challenge mit der ID " + id);
+      // TODO: errorhandling
+    } else {
+      console.log("Challenge mit der ID " + id + " wurde aktualisiert.");
+      return id;
+    }
+  } catch (error) {
+    console.log(error.message);
+  }
+  return null;
+}
+
+
+// Delete challenge by id
+async function deleteChallenge(id) {
+  try {
+    const collection = db.collection("challenges");
+    const query = { _id: id }; // `_id` als String
+    const result = await collection.deleteOne(query);
+
+    if (result.deletedCount === 0) {
+      console.log("Keine Challenge mit der ID " + id);
+    } else {
+      console.log("Challenge mit der ID " + id + " wurde gelöscht.");
+      return id;
+    }
+  } catch (error) {
+    console.log(error.message);
+  }
+  return null;
+}
 
 export default {
   getHikes,
@@ -116,4 +211,9 @@ export default {
   createHike,
   updateHike,
   deleteHike,
+  getChallenges,
+  getChallenge,
+  createChallenge,
+  updateChallenge,
+  deleteChallenge,
 };

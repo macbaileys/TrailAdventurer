@@ -27,6 +27,11 @@
 			>
 			<button
 				class="btn"
+				on:click={() => (window.location.href = "/challenges")}
+				>Herausforderungen</button
+			>
+			<button
+				class="btn ai-button"
 				on:click={() => (window.location.href = "/openai_integration")}
 				>Wanderung mit AI finden</button
 			>
@@ -64,6 +69,16 @@
 	}
 
 	.btn:hover {
+		background-color: #45a049;
+		color: white;
+	}
+
+	.ai-button {
+		background-color: #4caf50;
+		color: white;
+	}
+
+	.ai-button:hover {
 		background-color: #45a049;
 		color: white;
 	}

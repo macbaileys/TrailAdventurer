@@ -13,6 +13,10 @@
       <a href={"/hikes/" + hike._id}>{hike.wanderung}</a>
     </div>
     <div>
+      <strong>Kanton:</strong>
+      {hike.canton}
+    </div>
+    <div>
       Kilometer: {hike.kilometer} km
     </div>
     <div>
@@ -31,17 +35,18 @@
       ).join("")} ({hike.user_rating.toFixed(1)})
     </div>
     <div>
-      Vertigo-Sicher: {hike.vertigo_safe ? "Ja" : "Nein"}
+      Höhenangst {hike.vertigo_safe ? "erlaubt" : "nicht erlaubt"}
     </div>
+
     {#if hike.favorite}
       <form method="POST" action="?/removeFromFavorites" use:enhance>
         <input type="hidden" name="id" value={hike._id} />
-        <button class="btn btn-danger">Von Favoriten entfernen</button>
+        <button class="btn btn-danger">Als zu tun markieren</button>
       </form>
     {:else}
       <form method="POST" action="?/addToFavorites" use:enhance>
         <input type="hidden" name="id" value={hike._id} />
-        <button class="btn btn-success">Zu Favoriten hinzufügen</button>
+        <button class="btn btn-success">Als erledigt markieren</button>
       </form>
     {/if}
   </div>
