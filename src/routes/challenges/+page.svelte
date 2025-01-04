@@ -1,12 +1,23 @@
 <script>
-    import Navbar from "$lib/components/Navbar.svelte"; // Importiere die Navbar-Komponente
-    import ChallengeCard from "$lib/components/ChallengeCard.svelte"; // Importiere die Challenge Card Komponente
+    import Navbar from "$lib/components/Navbar.svelte";
+    import ChallengeCard from "$lib/components/ChallengeCard.svelte";
 
-    export let data; // Die geladenen Daten aus `+page.server.js`
+    export let data; // Initiale Daten aus `+page.server.js`
+
+    async function updateChallenges() {
+        const response = await fetch("/api/updateChallenges", {
+            method: "POST",
+        });
+
+        if (response.ok) {
+            window.location.reload(); // Aktualisiert die gesamte Seite
+        } else {
+            console.error("Fehler beim Aktualisieren der Challenges");
+        }
+    }
 </script>
 
 <Navbar />
-<!-- Hier wird die Navbar-Komponente eingebunden -->
 
 <h1 class="page-title">Herausforderungen</h1>
 
@@ -19,6 +30,8 @@
         <p>Es gibt momentan keine Herausforderungen.</p>
     {/if}
 </div>
+
+<button on:click={updateChallenges}>Challenges aktualisieren</button>
 
 <style>
     .page-title {

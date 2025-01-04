@@ -6,6 +6,16 @@ const client = new MongoClient(DB_URI);
 await client.connect();
 const db = client.db("HikesDB"); // select database
 
+// Verbindung zur Datenbank herstellen
+async function connectToDB() {
+  if (!db) {
+    await client.connect();
+    db = client.db("HikesDB"); // Datenbank auswählen
+  }
+  return db;
+}
+
+
 //////////////////////////////////////////
 // Hikes
 //////////////////////////////////////////
@@ -184,6 +194,42 @@ async function updateChallenge(challenge) {
   }
   return null;
 }
+// Update challenges basierend auf den Favoriten-Hikes
+async function updateChallenges() {
+  try {
+    const favoriteHikes = await db
+      .collection("hikes")
+      .find({ favorite: true })
+      .map((hike) => hike._id.toString()) // ObjectId zu String umwandeln
+      .toArray();
+
+    const challenges = await db.collection("challenges").find().toArray();
+
+    for (const challenge of challenges) {
+      const activatedCount = challenge.related_hikes.filter((hikeId) =>
+        favoriteHikes.includes(hikeId)
+      ).length;
+
+      const isAchieved = activatedCount >= challenge.goal;
+
+      await db.collection("challenges").updateOne(
+        { _id: challenge._id },
+        {
+          $set: {
+            progress: activatedCount,
+            status: isAchieved ? "achieved" : "in_progress",
+          },
+        }
+      );
+    }
+
+    console.log("Challenges erfolgreich aktualisiert.");
+    return { success: true, message: "Challenges erfolgreich aktualisiert." };
+  } catch (error) {
+    console.error("Fehler beim Aktualisieren der Challenges:", error);
+    return { success: false, message: error.message };
+  }
+}
 
 
 // Delete challenge by id
@@ -216,4 +262,6 @@ export default {
   createChallenge,
   updateChallenge,
   deleteChallenge,
+  updateChallenges,
+  connectToDB,
 };

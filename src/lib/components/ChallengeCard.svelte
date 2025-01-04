@@ -1,5 +1,5 @@
 <script>
-    let { challenge } = $props();
+    export let challenge;
 </script>
 
 <div class="challenge-card">
@@ -17,7 +17,7 @@
         </div>
         <div class="status">
             <p>
-                Status: {challenge.status === "completed"
+                Status: {challenge.status === "achieved"
                     ? "Abgeschlossen"
                     : "In Bearbeitung"}
             </p>
