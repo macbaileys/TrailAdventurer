@@ -6,11 +6,6 @@ export async function load() {
         hikes
     };
 }
-export async function load({ params }) {
-    return {
-        hike: await db.getHike(params.hike_id),
-    };
-}
 
 export const actions = {
     addToFavorites: async ({ request }) => {
