@@ -26,6 +26,12 @@
             <p>Belohnung: {challenge.reward}</p>
         </div>
     </div>
+    <!-- Badge-Bild anzeigen, wenn status "achieved" ist -->
+    {#if challenge.status === "achieved" && challenge.badge_image}
+        <div class="badge-container">
+            <img src={challenge.badge_image} alt="Badge für {challenge.name}" />
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -74,5 +80,17 @@
     .reward p {
         font-size: 1em;
         color: #444;
+    }
+    .badge-container {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .badge-container img {
+        width: 200px; /* Erhöhe die Breite */
+        height: 200px; /* Erhöhe die Höhe */
+        object-fit: contain;
+        border-radius: 20%; /* Runde das Bild */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Etwas mehr Schatten für ein schönes Aussehen */
+        margin-top: 1rem;
     }
 </style>
