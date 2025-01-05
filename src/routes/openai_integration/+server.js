@@ -27,9 +27,9 @@ async function callOpenAIWithRetry(prompt) {
                 messages: [
                     {
                         role: "user",
-                        content: `Extract concise and relevant keywords directly related to this hiking description: "${prompt}". 
-                        Focus only on key attributes like specific locations (e.g., California, Patagonia), difficulty levels (easy, moderate, hard), or any unique terms.
-                        Provide a comma-separated list without additional text or prefixes.`,
+                        content: `Extrahiere prägnante und relevante Schlüsselwörter aus dieser Beschreibung einer Wanderung: "${prompt}". 
+                        Konzentriere dich auf wichtige Attribute wie spezifische Orte (z.B. Zürich, Graubünden), Kantone (z.B. Wallis), Schwierigkeitsgrade (leicht, mittel, schwer) oder andere besondere Attribute wie Kinder oder Familie.
+                        Gib eine durch Kommas getrennte Liste zurück, ohne zusätzlichen Text oder Präfixe.`,
                     },
                 ],
                 max_tokens: 50,
@@ -69,7 +69,8 @@ export async function POST({ request }) {
             .find({
                 $or: [
                     { wanderung: { $regex: keywords.join("|"), $options: "i" } },
-                    { locations: { $in: keywords } },
+                    { description: { $regex: keywords.join("|"), $options: "i" } },
+                    { canton: { $regex: keywords.join("|"), $options: "i" } },
                 ],
             })
             .sort({ user_rating: -1 })
