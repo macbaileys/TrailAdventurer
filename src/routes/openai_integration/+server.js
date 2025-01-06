@@ -113,18 +113,5 @@ export async function POST({ request }) {
     } catch (error) {
         console.error("Error in POST /openai_integration:", error);
 
-        if (error.status === 429) {
-            return new Response(
-                JSON.stringify({
-                    error: "Rate limit reached. Please try again later.",
-                }),
-                { status: 429, headers: { "Content-Type": "application/json" } }
-            );
-        }
-
-        return new Response(
-            JSON.stringify({ error: "An unexpected error occurred. Please try again later." }),
-            { status: 500, headers: { "Content-Type": "application/json" } }
-        );
     }
 }

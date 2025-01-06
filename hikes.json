@@ -1,437 +1,936 @@
-[
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff13"
-        },
-        "wanderung": "Alpenüberquerung",
-        "kilometer": 42,
-        "elevation_up": 1800,
-        "elevation_down": 1500,
-        "exposedness_level": 5,
-        "TrailAdventurer_difficulty": 7,
-        "user_rating": 4.2,
-        "dauer": "120 Minuten",
-        "titelbild": "/images/swissalps.png",
-        "vertigo_safe": false,
-        "favorite": false,
-        "starting_point": [
-            46.9501,
-            8.3412
-        ],
-        "end_point": [
-            46.7011,
-            8.1285
-        ],
-        "locations": [
-            "alpen",
-            "schweiz",
-            "deutschland"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff14"
-        },
-        "wanderung": "Chinareise",
-        "kilometer": 20,
-        "elevation_up": 800,
-        "elevation_down": 600,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 5,
-        "user_rating": 3.6,
-        "dauer": "143 Minuten",
-        "titelbild": "/images/gwchina.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            39.9042,
-            116.4074
-        ],
-        "end_point": [
-            39.9142,
-            116.4274
-        ],
-        "locations": [
-            "asien"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff15"
-        },
-        "wanderung": "Neuseeland",
-        "kilometer": 12,
-        "elevation_up": 500,
-        "elevation_down": 400,
-        "exposedness_level": 2,
-        "TrailAdventurer_difficulty": 4,
-        "user_rating": 4.5,
-        "dauer": "105 Minuten",
-        "titelbild": "/images/newzealand.png",
-        "vertigo_safe": true,
-        "favorite": false,
-        "starting_point": [
-            -43.5321,
-            172.6362
-        ],
-        "end_point": [
-            -43.5325,
-            172.6325
-        ],
-        "locations": [
-            "ozeanien"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff16"
-        },
-        "wanderung": "Patagonien",
-        "kilometer": 35,
-        "elevation_up": 1200,
-        "elevation_down": 1000,
-        "exposedness_level": 4,
-        "TrailAdventurer_difficulty": 6,
-        "user_rating": 4.0,
-        "dauer": "132 Minuten",
-        "titelbild": "/images/patagonia.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            -50.9427,
-            -73.4068
-        ],
-        "end_point": [
-            -50.9512,
-            -73.4211
-        ],
-        "locations": [
-            "südamerika"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff17"
-        },
-        "wanderung": "Islandabenteuer",
-        "kilometer": 15,
-        "elevation_up": 600,
-        "elevation_down": 600,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 5,
-        "user_rating": 3.8,
-        "dauer": "117 Minuten",
-        "titelbild": "/images/iceland.png",
-        "vertigo_safe": false,
-        "favorite": false,
-        "starting_point": [
-            64.1355,
-            -21.8954
-        ],
-        "end_point": [
-            64.1389,
-            -21.8993
-        ],
-        "locations": [
-            "restlichesEuropa"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff18"
-        },
-        "wanderung": "Big Sur in California",
-        "kilometer": 18,
-        "elevation_up": 700,
-        "elevation_down": 700,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 5,
-        "user_rating": 3.9,
-        "dauer": "150 Minuten",
-        "titelbild": "/images/bigsurcali.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            36.3615,
-            -121.8563
-        ],
-        "end_point": [
-            36.3615,
-            -121.8563
-        ],
-        "locations": [
-            "nordamerika"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff19"
-        },
-        "wanderung": "Swiss Lakes Trail",
-        "kilometer": 24,
-        "elevation_up": 900,
-        "elevation_down": 850,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 6,
-        "user_rating": 4.1,
-        "dauer": "190 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": false,
-        "starting_point": [
-            46.8901,
-            8.4212
-        ],
-        "end_point": [
-            46.7205,
-            8.1593
-        ],
-        "locations": [
-            "alpen",
-            "schweiz"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff1a"
-        },
-        "wanderung": "Grand Canyon Rim",
-        "kilometer": 19,
-        "elevation_up": 650,
-        "elevation_down": 650,
-        "exposedness_level": 5,
-        "TrailAdventurer_difficulty": 7,
-        "user_rating": 4.3,
-        "dauer": "200 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            36.1069,
-            -112.1129
-        ],
-        "end_point": [
-            36.1083,
-            -112.1138
-        ],
-        "locations": [
-            "nordamerika"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff1b"
-        },
-        "wanderung": "Bavarian Forest Adventure",
-        "kilometer": 28,
-        "elevation_up": 950,
-        "elevation_down": 900,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 5,
-        "user_rating": 4.0,
-        "dauer": "240 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            48.9822,
-            13.2077
-        ],
-        "end_point": [
-            49.0155,
-            13.1333
-        ],
-        "locations": [
-            "deutschland"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff1c"
-        },
-        "wanderung": "Italian Coastline Escape",
-        "kilometer": 16,
-        "elevation_up": 450,
-        "elevation_down": 500,
-        "exposedness_level": 4,
-        "TrailAdventurer_difficulty": 5,
-        "user_rating": 4.2,
-        "dauer": "180 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": false,
-        "starting_point": [
-            44.0981,
-            9.8241
-        ],
-        "end_point": [
-            44.1005,
-            9.8055
-        ],
-        "locations": [
-            "italien"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff1d"
-        },
-        "wanderung": "Amazon Rainforest Expedition",
-        "kilometer": 32,
-        "elevation_up": 400,
-        "elevation_down": 300,
-        "exposedness_level": 2,
-        "TrailAdventurer_difficulty": 4,
-        "user_rating": 4.5,
-        "dauer": "210 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": true,
-        "favorite": false,
-        "starting_point": [
-            -3.4653,
-            -62.2159
-        ],
-        "end_point": [
-            -3.4321,
-            -62.2451
-        ],
-        "locations": [
-            "südamerika"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff1e"
-        },
-        "wanderung": "Mount Fuji Climb",
-        "kilometer": 25,
-        "elevation_up": 1400,
-        "elevation_down": 1200,
-        "exposedness_level": 5,
-        "TrailAdventurer_difficulty": 8,
-        "user_rating": 4.7,
-        "dauer": "360 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            35.3606,
-            138.7274
-        ],
-        "end_point": [
-            35.3581,
-            138.7307
-        ],
-        "locations": [
-            "asien"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff1f"
-        },
-        "wanderung": "Rocky Mountain Trail",
-        "kilometer": 45,
-        "elevation_up": 1700,
-        "elevation_down": 1500,
-        "exposedness_level": 6,
-        "TrailAdventurer_difficulty": 9,
-        "user_rating": 4.9,
-        "dauer": "480 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            39.5501,
-            -105.7821
-        ],
-        "end_point": [
-            39.5788,
-            -105.7754
-        ],
-        "locations": [
-            "nordamerika"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff20"
-        },
-        "wanderung": "Norwegian Fjords Journey",
-        "kilometer": 20,
-        "elevation_up": 700,
-        "elevation_down": 650,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 5,
-        "user_rating": 4.4,
-        "dauer": "240 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": false,
-        "starting_point": [
-            61.2291,
-            7.1260
-        ],
-        "end_point": [
-            61.2385,
-            7.1189
-        ],
-        "locations": [
-            "restlichesEuropa"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff21"
-        },
-        "wanderung": "Moroccan Desert Trek",
-        "kilometer": 30,
-        "elevation_up": 500,
-        "elevation_down": 450,
-        "exposedness_level": 2,
-        "TrailAdventurer_difficulty": 3,
-        "user_rating": 4.3,
-        "dauer": "300 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": true,
-        "favorite": false,
-        "starting_point": [
-            31.6289,
-            -7.9923
-        ],
-        "end_point": [
-            31.6597,
-            -7.9785
-        ],
-        "locations": [
-            "afrika"
-        ]
-    },
-    {
-        "_id": {
-            "$oid": "6630e72c95e12055f661ff22"
-        },
-        "wanderung": "Scottish Highlands Escape",
-        "kilometer": 25,
-        "elevation_up": 800,
-        "elevation_down": 750,
-        "exposedness_level": 3,
-        "TrailAdventurer_difficulty": 6,
-        "user_rating": 4.6,
-        "dauer": "280 Minuten",
-        "titelbild": "/images/newhike.png",
-        "vertigo_safe": false,
-        "favorite": true,
-        "starting_point": [
-            57.4796,
-            -4.2254
-        ],
-        "end_point": [
-            57.4901,
-            -4.2488
-        ],
-        "locations": [
-            "restlichesEuropa"
-        ]
-    }
-]
+[{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff01"
+  },
+  "wanderung": "Schneekristallpfad",
+  "kilometer": 15,
+  "elevation_up": 700,
+  "elevation_down": 500,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.2,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_1.png",
+  "vertigo_safe": true,
+  "favorite": true,
+  "description": "Ein leichter Wanderweg durch eine glitzernde Winterlandschaft im Kanton Schwyz. Ideal für Familien und Einsteiger.",
+  "canton": "Schwyz"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff02"
+  },
+  "wanderung": "Gletscherblickroute",
+  "kilometer": 14,
+  "elevation_up": 800,
+  "elevation_down": 700,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.5,
+  "dauer": "135 Minuten",
+  "titelbild": "/images/swiss_hike_2.png",
+  "vertigo_safe": false,
+  "favorite": true,
+  "description": "Ein anspruchsvoller Wanderweg mit spektakulärem Blick auf die Walliser Gletscher. Für erfahrene Wanderer geeignet.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff03"
+  },
+  "wanderung": "Felsenpfad",
+  "kilometer": 12,
+  "elevation_up": 600,
+  "elevation_down": 600,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.1,
+  "dauer": "110 Minuten",
+  "titelbild": "/images/swiss_hike_3.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein felsiger, aber gut markierter Wanderweg durch die malerischen Berge Graubündens. Für geübte Wanderer geeignet.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff04"
+  },
+  "wanderung": "Wildblumenwanderung",
+  "kilometer": 13,
+  "elevation_up": 900,
+  "elevation_down": 850,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.3,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_4.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein farbenfroher Wanderweg durch blühende Wiesen im Berner Oberland. Perfekt für Naturliebhaber.",
+  "canton": "Bern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff05"
+  },
+  "wanderung": "Alpenseerunde",
+  "kilometer": 20,
+  "elevation_up": 1100,
+  "elevation_down": 1000,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 7,
+  "user_rating": 4.6,
+  "dauer": "160 Minuten",
+  "titelbild": "/images/swiss_hike_5.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein fordernder Rundweg mit atemberaubenden Ausblicken auf alpine Seen und Gipfel. Nichts für schwache Nerven.",
+  "canton": "Uri"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff06"
+  },
+  "wanderung": "Waldrastpfad",
+  "kilometer": 14,
+  "elevation_up": 500,
+  "elevation_down": 450,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 4,
+  "user_rating": 4,
+  "dauer": "100 Minuten",
+  "titelbild": "/images/swiss_hike_6.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein entspannter Spaziergang durch die ruhigen Wälder von Nidwalden. Ideal zum Abschalten.",
+  "canton": "Nidwalden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff07"
+  },
+  "wanderung": "Panoramapfad Obwalden",
+  "kilometer": 17,
+  "elevation_up": 700,
+  "elevation_down": 600,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.3,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_7.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein Panoramaweg mit herrlicher Aussicht auf die umliegenden Berge von Obwalden. Moderat anspruchsvoll.",
+  "canton": "Obwalden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff08"
+  },
+  "wanderung": "Schwyzer Höhenweg",
+  "kilometer": 15,
+  "elevation_up": 850,
+  "elevation_down": 750,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.5,
+  "dauer": "140 Minuten",
+  "titelbild": "/images/swiss_hike_8.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein anspruchsvoller Weg mit steilen Anstiegen und spektakulären Aussichten. Perfekt für erfahrene Wanderer.",
+  "canton": "Schwyz"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff09"
+  },
+  "wanderung": "Aletschlgetscher Tour",
+  "kilometer": 19,
+  "elevation_up": 1200,
+  "elevation_down": 1100,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 8,
+  "user_rating": 4.7,
+  "dauer": "200 Minuten",
+  "titelbild": "/images/swiss_hike_9.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Eine herausfordernde Tour entlang der beeindruckenden Gletscherlandschaft des Wallis. Für erfahrene Bergsteiger.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff10"
+  },
+  "wanderung": "Graubündner Almwanderung",
+  "kilometer": 16,
+  "elevation_up": 600,
+  "elevation_down": 550,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.3,
+  "dauer": "130 Minuten",
+  "titelbild": "/images/swiss_hike_10.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein gemütlicher Wanderweg durch die idyllischen Almwiesen Graubündens. Ideal für ein Wochenende in der Natur.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff11"
+  },
+  "wanderung": "Bergblütenpfad",
+  "kilometer": 12,
+  "elevation_up": 500,
+  "elevation_down": 450,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 4,
+  "user_rating": 4.2,
+  "dauer": "90 Minuten",
+  "titelbild": "/images/swiss_hike_11.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein malerischer Wanderweg durch blühende Almwiesen im Herzen des Berner Oberlands. Perfekt für Einsteiger.",
+  "canton": "Bern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff12"
+  },
+  "wanderung": "Seeblickpfad",
+  "kilometer": 14,
+  "elevation_up": 600,
+  "elevation_down": 550,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.3,
+  "dauer": "110 Minuten",
+  "titelbild": "/images/swiss_hike_12.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein moderater Pfad mit spektakulärem Blick auf den Vierwaldstättersee. Ideal für einen Wochenendausflug.",
+  "canton": "Luzern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff13"
+  },
+  "wanderung": "Tessiner Schluchtenweg",
+  "kilometer": 15,
+  "elevation_up": 700,
+  "elevation_down": 600,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.5,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_13.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Eine abenteuerliche Wanderung durch tiefe Schluchten und klare Gebirgsbäche. Perfekt für Entdecker.",
+  "canton": "Tessin"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff14"
+  },
+  "wanderung": "Obwaldner Höhenweg",
+  "kilometer": 18,
+  "elevation_up": 850,
+  "elevation_down": 750,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 7,
+  "user_rating": 4.6,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_14.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein fordernder Wanderweg mit herrlichem Panorama über die Bergwelt von Obwalden. Für erfahrene Wanderer.",
+  "canton": "Obwalden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff15"
+  },
+  "wanderung": "Walliser Hängebrückentour",
+  "kilometer": 10,
+  "elevation_up": 400,
+  "elevation_down": 350,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 4,
+  "user_rating": 4.4,
+  "dauer": "80 Minuten",
+  "titelbild": "/images/swiss_hike_15.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Eine einzigartige Wanderung mit spannenden Überquerungen von Hängebrücken und Blick auf die Walliser Gletscher.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff16"
+  },
+  "wanderung": "Uri Klippenpfad",
+  "kilometer": 13,
+  "elevation_up": 650,
+  "elevation_down": 600,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.3,
+  "dauer": "100 Minuten",
+  "titelbild": "/images/swiss_hike_16.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein anspruchsvoller Weg mit beeindruckenden Klippen und weitem Blick über die Urner Alpen.",
+  "canton": "Uri"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff17"
+  },
+  "wanderung": "Graubündner Flusspfad",
+  "kilometer": 11,
+  "elevation_up": 300,
+  "elevation_down": 250,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 3,
+  "user_rating": 4,
+  "dauer": "70 Minuten",
+  "titelbild": "/images/swiss_hike_17.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein entspannter Flusspfad entlang der rauschenden Bergbäche Graubündens. Ideal für Familien.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff18"
+  },
+  "wanderung": "Bern Panoramaweg",
+  "kilometer": 14,
+  "elevation_up": 550,
+  "elevation_down": 500,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 4,
+  "user_rating": 4.2,
+  "dauer": "90 Minuten",
+  "titelbild": "/images/swiss_hike_18.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein einfacher Panoramaweg mit Blick auf die Berner Alpen. Perfekt für entspannte Tageswanderungen.",
+  "canton": "Bern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff19"
+  },
+  "wanderung": "Schwyzer Almrunde",
+  "kilometer": 12,
+  "elevation_up": 400,
+  "elevation_down": 350,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 3,
+  "user_rating": 4.1,
+  "dauer": "85 Minuten",
+  "titelbild": "/images/swiss_hike_19.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Eine gemütliche Rundwanderung durch die grünen Almen von Schwyz. Ideal für Naturfreunde.",
+  "canton": "Schwyz"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff20"
+  },
+  "wanderung": "Tessiner Sonnenpfad",
+  "kilometer": 16,
+  "elevation_up": 750,
+  "elevation_down": 700,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.4,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_20.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein sonniger Wanderweg durch das Tessin mit atemberaubenden Blicken auf die umliegenden Täler.",
+  "canton": "Tessin"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff21"
+  },
+  "wanderung": "Adlerkamm-Pfad",
+  "kilometer": 14,
+  "elevation_up": 900,
+  "elevation_down": 800,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 8,
+  "user_rating": 4.7,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_21.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein atemberaubender Gratweg mit steilen Abgründen und majestätischen Aussichten. Nur für schwindelfreie und erfahrene Wanderer geeignet.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff22"
+  },
+  "wanderung": "Steinadlersteig",
+  "kilometer": 13,
+  "elevation_up": 800,
+  "elevation_down": 700,
+  "exposedness_level": 6,
+  "TrailAdventurer_difficulty": 9,
+  "user_rating": 4.9,
+  "dauer": "180 Minuten",
+  "titelbild": "/images/swiss_hike_22.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein herausfordernder Pfad mit engen Passagen und steilen Anstiegen, der spektakuläre Ausblicke auf die Alpen bietet.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff23"
+  },
+  "wanderung": "Höllenschlucht-Tour",
+  "kilometer": 12,
+  "elevation_up": 700,
+  "elevation_down": 600,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 7,
+  "user_rating": 4.6,
+  "dauer": "140 Minuten",
+  "titelbild": "/images/swiss_hike_23.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein dramatischer Weg durch eine tiefe Schlucht mit steilen Wänden und beeindruckenden Wasserfällen.",
+  "canton": "Tessin"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff24"
+  },
+  "wanderung": "Königsgrat-Panorama",
+  "kilometer": 15,
+  "elevation_up": 850,
+  "elevation_down": 800,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 7,
+  "user_rating": 4.8,
+  "dauer": "160 Minuten",
+  "titelbild": "/images/swiss_hike_24.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein spannender Gratweg mit unvergleichlicher Aussicht auf die umliegenden Gipfel und Täler.",
+  "canton": "Obwalden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff25"
+  },
+  "wanderung": "Teufelsbrücke-Abenteuer",
+  "kilometer": 10,
+  "elevation_up": 600,
+  "elevation_down": 500,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.4,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_25.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein historischer Weg über die legendäre Teufelsbrücke mit schroffen Klippen und faszinierenden Legenden.",
+  "canton": "Uri"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff26"
+  },
+  "wanderung": "Zermatter Zickzackpfad",
+  "kilometer": 11,
+  "elevation_up": 700,
+  "elevation_down": 650,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 7,
+  "user_rating": 4.5,
+  "dauer": "130 Minuten",
+  "titelbild": "/images/swiss_hike_26.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein anspruchsvoller Serpentinenweg mit beeindruckendem Blick auf das Matterhorn und die umliegenden Gletscher.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff27"
+  },
+  "wanderung": "Schattenspitze-Weg",
+  "kilometer": 14,
+  "elevation_up": 750,
+  "elevation_down": 700,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.2,
+  "dauer": "125 Minuten",
+  "titelbild": "/images/swiss_hike_27.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein malerischer Weg entlang steiler Hänge mit schattigen Waldabschnitten und weiten Ausblicken.",
+  "canton": "Bern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff28"
+  },
+  "wanderung": "Klippensturzpfad",
+  "kilometer": 13,
+  "elevation_up": 800,
+  "elevation_down": 750,
+  "exposedness_level": 6,
+  "TrailAdventurer_difficulty": 9,
+  "user_rating": 4.9,
+  "dauer": "180 Minuten",
+  "titelbild": "/images/swiss_hike_28.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein extrem anspruchsvoller Weg mit schmalen Passagen und überwältigenden Klippenansichten. Nur für erfahrene Wanderer.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff29"
+  },
+  "wanderung": "Sturmgratpfad",
+  "kilometer": 12,
+  "elevation_up": 600,
+  "elevation_down": 550,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.3,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_29.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein aufregender Wanderweg mit windigen Höhen und faszinierenden Aussichten über das Hochgebirge.",
+  "canton": "Schwyz"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff30"
+  },
+  "wanderung": "Hochalpiner Gratweg",
+  "kilometer": 15,
+  "elevation_up": 900,
+  "elevation_down": 850,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 8,
+  "user_rating": 4.8,
+  "dauer": "160 Minuten",
+  "titelbild": "/images/swiss_hike_30.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein spektakulärer Gratweg in luftiger Höhe mit Blick auf die höchsten Gipfel der Schweiz. Für erfahrene Wanderer.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff31"
+  },
+  "wanderung": "Familienwanderung Zürisee",
+  "kilometer": 5,
+  "elevation_up": 100,
+  "elevation_down": 100,
+  "exposedness_level": 1,
+  "TrailAdventurer_difficulty": 1,
+  "user_rating": 4.1,
+  "dauer": "60 Minuten",
+  "titelbild": "/images/swiss_hike_31.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Eine entspannte Wanderung entlang des Zürichsees. Perfekt für Familien und Senioren mit herrlichem Seeblick.",
+  "canton": "Zürich"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff32"
+  },
+  "wanderung": "Winterthurer Stadtpfad",
+  "kilometer": 7,
+  "elevation_up": 150,
+  "elevation_down": 150,
+  "exposedness_level": 1,
+  "TrailAdventurer_difficulty": 2,
+  "user_rating": 4,
+  "dauer": "90 Minuten",
+  "titelbild": "/images/swiss_hike_32.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein leichter Rundweg durch die historischen Gassen und grünen Parks von Winterthur. Ideal für entspannte Spaziergänge.",
+  "canton": "Zürich"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff33"
+  },
+  "wanderung": "Schlossweg Neuenburg",
+  "kilometer": 8,
+  "elevation_up": 200,
+  "elevation_down": 200,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 3,
+  "user_rating": 4.2,
+  "dauer": "100 Minuten",
+  "titelbild": "/images/swiss_hike_33.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein kultureller Wanderweg mit Besichtigung des Schlosses Neuenburg und Blick auf den Neuenburgersee.",
+  "canton": "Neuenburg"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff34"
+  },
+  "wanderung": "Waadtländer Seepromenade",
+  "kilometer": 6,
+  "elevation_up": 50,
+  "elevation_down": 50,
+  "exposedness_level": 1,
+  "TrailAdventurer_difficulty": 1,
+  "user_rating": 4.5,
+  "dauer": "60 Minuten",
+  "titelbild": "/images/swiss_hike_34.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein einfacher Spaziergang entlang der Waadtländer Seepromenade mit Cafés und herrlichem Ausblick auf den Genfersee.",
+  "canton": "Waadt"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff35"
+  },
+  "wanderung": "Abenteuerpfad Rheinfall",
+  "kilometer": 10,
+  "elevation_up": 300,
+  "elevation_down": 300,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 4,
+  "user_rating": 4.7,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_35.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein spannender Wanderweg mit spektakulären Ausblicken auf den Rheinfall und die umliegenden Wälder.",
+  "canton": "Schaffhausen"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff36"
+  },
+  "wanderung": "Kulturpfad Waadt",
+  "kilometer": 12,
+  "elevation_up": 400,
+  "elevation_down": 400,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 3,
+  "user_rating": 4.4,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_36.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein malerischer Kulturpfad durch die Dörfer und Weinberge der Waadtländer Region. Ideal für Genießer.",
+  "canton": "Waadt"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff37"
+  },
+  "wanderung": "Neuenburger Seenweg",
+  "kilometer": 9,
+  "elevation_up": 150,
+  "elevation_down": 150,
+  "exposedness_level": 1,
+  "TrailAdventurer_difficulty": 2,
+  "user_rating": 4.3,
+  "dauer": "100 Minuten",
+  "titelbild": "/images/swiss_hike_37.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein einfacher Seenweg mit herrlicher Aussicht auf den Neuenburgersee und zahlreichen Rastmöglichkeiten.",
+  "canton": "Neuenburg"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff38"
+  },
+  "wanderung": "Stadtpfad Lausanne",
+  "kilometer": 6,
+  "elevation_up": 200,
+  "elevation_down": 200,
+  "exposedness_level": 1,
+  "TrailAdventurer_difficulty": 1,
+  "user_rating": 4,
+  "dauer": "80 Minuten",
+  "titelbild": "/images/swiss_hike_38.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein gemütlicher Stadtspaziergang durch die historischen Straßen und Parks von Lausanne.",
+  "canton": "Waadt"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff39"
+  },
+  "wanderung": "Zürcher Panoramaweg",
+  "kilometer": 10,
+  "elevation_up": 300,
+  "elevation_down": 300,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 3,
+  "user_rating": 4.4,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_39.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein angenehmer Wanderweg mit fantastischer Aussicht auf die Skyline von Zürich und die umliegenden Hügel.",
+  "canton": "Zürich"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff40"
+  },
+  "wanderung": "Waadtländer Weinweg",
+  "kilometer": 8,
+  "elevation_up": 250,
+  "elevation_down": 250,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 2,
+  "user_rating": 4.5,
+  "dauer": "100 Minuten",
+  "titelbild": "/images/swiss_hike_40.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Ein idyllischer Wanderweg durch die Weinberge der Waadt, ideal für Weinliebhaber und Spaziergänger.",
+  "canton": "Waadt"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff41"
+  },
+  "wanderung": "Blauschimmersee-Route",
+  "kilometer": 14,
+  "elevation_up": 800,
+  "elevation_down": 700,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.6,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_41.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Eine beeindruckende Wanderung zum Blauschimmersee mit malerischen Aussichten auf die umliegenden Berggipfel.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff42"
+  },
+  "wanderung": "Gipfelstürmerpfad",
+  "kilometer": 16,
+  "elevation_up": 1100,
+  "elevation_down": 1000,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 8,
+  "user_rating": 4.8,
+  "dauer": "180 Minuten",
+  "titelbild": "/images/swiss_hike_42.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein anspruchsvoller Klettersteig, der erfahrene Wanderer auf die höchsten Gipfel der Region führt.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff43"
+  },
+  "wanderung": "Kristallsee-Rundwanderung",
+  "kilometer": 12,
+  "elevation_up": 600,
+  "elevation_down": 600,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.4,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_43.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein leichter Rundweg um den Kristallsee, perfekt für entspannte Wanderungen mit beeindruckenden Ausblicken.",
+  "canton": "Uri"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff44"
+  },
+  "wanderung": "Schattentalpfad",
+  "kilometer": 15,
+  "elevation_up": 750,
+  "elevation_down": 700,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.5,
+  "dauer": "140 Minuten",
+  "titelbild": "/images/swiss_hike_44.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein mystischer Pfad durch das Schattental mit dichten Wäldern und klaren Gebirgsbächen.",
+  "canton": "Obwalden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff45"
+  },
+  "wanderung": "Adlerhorst-Klettersteig",
+  "kilometer": 10,
+  "elevation_up": 900,
+  "elevation_down": 850,
+  "exposedness_level": 6,
+  "TrailAdventurer_difficulty": 9,
+  "user_rating": 4.9,
+  "dauer": "160 Minuten",
+  "titelbild": "/images/swiss_hike_45.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein spektakulärer Klettersteig mit steilen Aufstiegen und schwindelerregenden Aussichten über die Alpen.",
+  "canton": "Bern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff46"
+  },
+  "wanderung": "Hochalpiner Seenpfad",
+  "kilometer": 13,
+  "elevation_up": 700,
+  "elevation_down": 650,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 7,
+  "user_rating": 4.7,
+  "dauer": "140 Minuten",
+  "titelbild": "/images/swiss_hike_46.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein herausfordernder Pfad, der zu einem kristallklaren Bergsee inmitten unberührter Natur führt.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff47"
+  },
+  "wanderung": "Gratweg über den Wolken",
+  "kilometer": 14,
+  "elevation_up": 800,
+  "elevation_down": 750,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 8,
+  "user_rating": 4.8,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_47.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein luftiger Gratweg mit atemberaubenden Panoramen, ideal für erfahrene Wanderer.",
+  "canton": "Graubünden"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff48"
+  },
+  "wanderung": "Gletscherblickpfad",
+  "kilometer": 12,
+  "elevation_up": 600,
+  "elevation_down": 550,
+  "exposedness_level": 3,
+  "TrailAdventurer_difficulty": 5,
+  "user_rating": 4.3,
+  "dauer": "120 Minuten",
+  "titelbild": "/images/swiss_hike_48.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein moderater Wanderweg mit unvergleichlichem Blick auf die majestätischen Gletscher der Region.",
+  "canton": "Uri"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff49"
+  },
+  "wanderung": "Tiefalpiner Klettersteig",
+  "kilometer": 9,
+  "elevation_up": 850,
+  "elevation_down": 800,
+  "exposedness_level": 6,
+  "TrailAdventurer_difficulty": 9,
+  "user_rating": 4.9,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_49.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein intensiver Klettersteig für Abenteuerlustige mit steilen Wänden und anspruchsvollen Passagen.",
+  "canton": "Bern"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff50"
+  },
+  "wanderung": "Zermatter Höhenwanderung",
+  "kilometer": 11,
+  "elevation_up": 650,
+  "elevation_down": 600,
+  "exposedness_level": 4,
+  "TrailAdventurer_difficulty": 6,
+  "user_rating": 4.6,
+  "dauer": "130 Minuten",
+  "titelbild": "/images/swiss_hike_50.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein spektakulärer Wanderweg mit unvergleichlichen Aussichten auf das Matterhorn und die umliegenden Gletscher.",
+  "canton": "Wallis"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff51"
+  },
+  "wanderung": "Säntis-Klettersteig",
+  "kilometer": 10,
+  "elevation_up": 900,
+  "elevation_down": 850,
+  "exposedness_level": 5,
+  "TrailAdventurer_difficulty": 8,
+  "user_rating": 4.7,
+  "dauer": "150 Minuten",
+  "titelbild": "/images/swiss_hike_51.png",
+  "vertigo_safe": false,
+  "favorite": false,
+  "description": "Ein anspruchsvoller Klettersteig mit steilen Passagen und fantastischen Blicken auf den Säntis. Nur für erfahrene Bergsteiger geeignet.",
+  "canton": "St. Gallen"
+},
+{
+  "_id": {
+    "$oid": "6630e72c95e12055f661ff52"
+  },
+  "wanderung": "Zuger Seeweg",
+  "kilometer": 8,
+  "elevation_up": 200,
+  "elevation_down": 200,
+  "exposedness_level": 2,
+  "TrailAdventurer_difficulty": 3,
+  "user_rating": 4.5,
+  "dauer": "100 Minuten",
+  "titelbild": "/images/swiss_hike_52.png",
+  "vertigo_safe": true,
+  "favorite": false,
+  "description": "Eine entspannte Wanderung entlang des Zugersees mit zahlreichen Rastplätzen und herrlicher Aussicht auf die Berge.",
+  "canton": "Zug"
+}]

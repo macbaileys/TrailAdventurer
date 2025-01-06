@@ -76,14 +76,14 @@
                 <form method="POST" action="?/removeFromFavorites" use:enhance>
                   <input type="hidden" name="id" value={hike._id} />
                   <button class="btn btn-danger w-100 shadow-sm"
-                    >Aus Favoriten entfernen</button
+                    >Als zu tun markieren</button
                   >
                 </form>
               {:else}
                 <form method="POST" action="?/addToFavorites" use:enhance>
                   <input type="hidden" name="id" value={hike._id} />
                   <button class="btn btn-success w-100 shadow-sm"
-                    >Zu Favoriten hinzufügen</button
+                    >Als erledigt markieren</button
                   >
                 </form>
               {/if}
