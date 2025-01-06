@@ -1,96 +1,89 @@
 <script>
     export let challenge;
+
+    // Determine the progress bar classes based on the challenge status
+    const getProgressBarClass = (status) => {
+        return status === "achieved"
+            ? "bg-success text-white sparkle-effect"
+            : "bg-warning text-dark";
+    };
 </script>
 
-<div class="challenge-card">
-    <div class="challenge-details">
-        <div class="name">
-            <h2>{challenge.name}</h2>
+<div class="card challenge-card shadow-lg border-0">
+    <!-- Card Header -->
+    <div class="card-header bg-success text-white text-center">
+        <h2 class="card-title mb-0">{challenge.name}</h2>
+    </div>
+
+    <!-- Card Body -->
+    <div class="card-body">
+        <!-- Description -->
+        <p class="card-text text-muted">{challenge.description}</p>
+
+        <!-- Progress Section -->
+        <div class="progress-container mb-3">
+            <p class="fw-bold text-dark">Fortschritt:</p>
+            <div class="progress" style="height: 20px;">
+                <div
+                    class={`progress-bar progress-bar-striped ${
+                        challenge.status === "achieved"
+                            ? "sparkle-effect"
+                            : "progress-bar-animated"
+                    } ${getProgressBarClass(challenge.status)}`}
+                    role="progressbar"
+                    style={`width: ${Math.min((challenge.progress / challenge.goal) * 100, 100)}%;`}
+                    aria-valuenow={challenge.progress}
+                    aria-valuemin="0"
+                    aria-valuemax={challenge.goal}
+                >
+                    {Math.round(
+                        Math.min(
+                            (challenge.progress / challenge.goal) * 100,
+                            100,
+                        ),
+                    )}%
+                </div>
+            </div>
         </div>
-        <div class="description">
-            <p>{challenge.description}</p>
-        </div>
-        <div class="progress-container">
-            <p>Fortschritt: {challenge.progress}/{challenge.goal}</p>
-            <progress max={challenge.goal} value={challenge.progress}
-            ></progress>
-        </div>
-        <div class="status">
-            <p>
-                Status: {challenge.status === "achieved"
+
+        <!-- Status -->
+        <p class="text-dark">
+            <span class="fw-bold">Status:</span>
+            <span
+                class={`badge ${challenge.status === "achieved" ? "bg-success" : "bg-warning text-dark"}`}
+                data-bs-toggle="tooltip"
+                title={challenge.status === "achieved"
+                    ? "Herzlichen Glückwunsch! Herausforderung abgeschlossen."
+                    : "Herausforderung läuft noch."}
+            >
+                {challenge.status === "achieved"
                     ? "Abgeschlossen"
                     : "In Bearbeitung"}
-            </p>
-        </div>
-        <div class="reward">
-            <p>Belohnung: {challenge.reward}</p>
-        </div>
+            </span>
+        </p>
+
+        <!-- Reward -->
+        <p class="text-success">
+            <strong>Belohnung:</strong>
+            {challenge.reward}
+        </p>
     </div>
-    <!-- Badge-Bild anzeigen, wenn status "achieved" ist -->
+
+    <!-- Card Footer: Badge Image -->
     {#if challenge.status === "achieved" && challenge.badge_image}
-        <div class="badge-container">
-            <img src={challenge.badge_image} alt="Badge für {challenge.name}" />
+        <div class="card-footer text-center bg-light">
+            <img
+                src={challenge.badge_image}
+                alt="Badge für {challenge.name}"
+                class="rounded-circle shadow-lg img-fluid"
+                style="max-width: 150px; max-height: 150px;"
+            />
+            <p class="mt-3 fw-bold text-success">Verdienter Erfolg!</p>
         </div>
     {/if}
 </div>
 
 <style>
-    .challenge-card {
-        border: 2px solid #2196f3;
-        height: 100%;
-        background-color: #f3f4f6;
-        color: #333;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        margin-bottom: 1rem;
-    }
-    .challenge-details {
-        padding: 1em;
-    }
-    .name h2 {
-        color: #1e88e5;
-        font-size: 1.5em;
-        margin-bottom: 0.5rem;
-    }
-    .description p {
-        font-size: 1em;
-        color: #666;
-        margin-bottom: 1rem;
-    }
-    .progress-container {
-        margin-bottom: 1rem;
-    }
-    progress {
-        width: 100%;
-        height: 20px;
-        border: none;
-        background: #e0e0e0;
-        border-radius: 10px;
-    }
-    progress::-webkit-progress-bar {
-        background-color: #e0e0e0;
-        border-radius: 10px;
-    }
-    progress::-webkit-progress-value {
-        background-color: #4caf50;
-        border-radius: 10px;
-    }
-    .status p,
-    .reward p {
-        font-size: 1em;
-        color: #444;
-    }
-    .badge-container {
-        text-align: center;
-        margin-top: 1rem;
-    }
-    .badge-container img {
-        width: 200px; /* Erhöhe die Breite */
-        height: 200px; /* Erhöhe die Höhe */
-        object-fit: contain;
-        border-radius: 20%; /* Runde das Bild */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Etwas mehr Schatten für ein schönes Aussehen */
-        margin-top: 1rem;
-    }
+    @import "bootstrap/dist/css/bootstrap.min.css";
+    @import "../../routes/styles.css"; /* Updated path to src/routes/styles.css */
 </style>

@@ -1,0 +1,615 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Apply Poppins font globally */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #004d1a, #00793c);
+    /* Modern earthy green gradient */
+    background-size: cover;
+    /* Ensure full coverage */
+    background-attachment: fixed;
+    /* Consistent on scroll */
+    color: #fff;
+    /* White text for contrast */
+}
+
+/* Optional utility class for additional styling */
+.gradient-overlay {
+    background: linear-gradient(135deg, #004d1a, #00793c);
+    /* Same gradient as body */
+    opacity: 0.95;
+    /* Slight transparency for overlay effects */
+    z-index: -1;
+    /* Ensure it doesn't block content */
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Content Overlay */
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Subtle text shadow */
+}
+
+/* Title Styling */
+.title {
+    font-size: 4rem;
+    /* Large font for emphasis */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+/* Subtitle Styling */
+.subtitle {
+    font-size: 2rem;
+    /* Slightly smaller than the title */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background-color: #000000;
+    color: white;
+    /* White text */
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    /* No border */
+    border-radius: 6px;
+    /* Smoothly rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    /* Subtle shadow on hover */
+}
+
+
+/* Challenge Card Styles */
+.challenge-card {
+    border-radius: 10px;
+    /* Modern rounded corners */
+    overflow: hidden;
+    /* Prevent content from overflowing */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.challenge-card:hover {
+    transform: scale(1.02);
+    /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+    /* Smooth width transition */
+    border-radius: 10px;
+    /* Rounded ends for a modern look */
+}
+
+
+/* Badge Styling */
+.badge {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* Text Styles */
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    font-weight: 400;
+}
+
+.text-dark {
+    font-weight: 500;
+}
+
+.text-success {
+    font-weight: 600;
+}
+
+/* Hike Card Styles */
+.hike-card {
+    border: 2px solid #4caf50;
+    /* Green border for success theme */
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.hike-card:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow */
+}
+
+.hike-card:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Dark overlay on hover */
+    opacity: 1;
+    /* Make overlay visible */
+}
+
+/* Card Image */
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    z-index: 2;
+}
+
+/* Custom Button Styles */
+.btn {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    opacity: 0.9;
+    /* Subtle opacity change */
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    /* Bootstrap danger red */
+    border-color: #d9534f;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    /* Bootstrap success green */
+    border-color: #5cb85c;
+}
+
+/* Card Title Link */
+.hike-card a {
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.hike-card a:hover {
+    color: #388e3c;
+    /* Darker green for hover effect */
+    text-decoration: underline;
+}
+
+/* List Group Styling */
+.list-group-item {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4caf50 !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Buttons */
+.btn {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-success {
+    color: #4caf50;
+    background-color: white;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #45a049;
+}
+
+.ai-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.ai-button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+
+/* Footer Styles */
+
+/* Hike Details Styles */
+.hike-details {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Card Header */
+.card-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Image Styling */
+.img-fluid {
+    border-radius: 8px;
+}
+
+/* List Group */
+.list-group-item {
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.btn-success:hover {
+    background-color: #4cae4c;
+}
+
+
+
+/* New Hike Form Styles */
+
+/* Form Card Styling */
+.card-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.img-thumbnail {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    color: white;
+    background-color: #6c757d;
+}
+
+/* Back Button Styling */
+.btn-primary {
+    background-color: #4caf50;
+    /* Match the theme's green */
+    border-color: #4caf50;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+.btn-primary.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for emphasis */
+}
+
+/* Hike List Styles */
+.container {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Section */
+.display-4 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    /* Earthy green */
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+/* Filter Switch */
+.form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.form-check-label {
+    font-weight: 500;
+    margin-left: 0.5em;
+    color: #495057;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #4caf50;
+    /* Earthy green */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+.btn-outline-secondary {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-outline-secondary:hover {
+    transform: scale(1.05);
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Challenges Page Styles */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Explanation Text */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #212529;
+    /* Black for clarity */
+}
+
+/* Challenge List Grid */
+.challenge-list {
+    padding: 1rem;
+}
+
+/* Update Button Styling */
+.update-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.update-button:hover {
+    background-color: #388e3c;
+    /* Even darker green on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.update-button:active {
+    background-color: #2e7d32;
+    /* Darkest green when active */
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Empty Challenges Message */
+.text-muted {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Main Container */
+.main-container {
+    background: url("/images/background.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+    background: rgba(255, 255, 255, 0.9);
+    /* Slight transparency */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Better contrast */
+}
+
+/* Prompt Area */
+.prompt-area {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Results */
+.results {
+    width: 100%;
+    text-align: center;
+}
+
+.results-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Better readability */
+}
+
+/* Hikes Grid */
+.hikes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Hike Details Page Styles */
+.hike-details .hike-id-title {
+    font-size: 3.5rem;
+    /* Large and readable */
+    font-weight: bold;
+    color: white;
+    /* White color for readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    /* Subtle shadow for contrast */
+    margin-bottom: 1rem;
+    text-align: center;
+    /* Center align the title */
+}

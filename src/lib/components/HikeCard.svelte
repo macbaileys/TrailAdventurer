@@ -4,92 +4,79 @@
   let { hike } = $props();
 </script>
 
-<div class="hike-card">
-  <div>
-    <img class="img-fluid" src={hike.titelbild} alt={hike.wanderung} />
+<div class="card hike-card shadow-lg border-success">
+  <div class="position-relative">
+    <img
+      src={hike.titelbild}
+      class="card-img-top img-fluid"
+      alt={`Titelbild von ${hike.wanderung}`}
+    />
+    <div class="overlay">
+      <h5
+        class="text-white fw-bold position-absolute top-50 start-50 translate-middle"
+      >
+        {hike.wanderung}
+      </h5>
+    </div>
   </div>
-  <div class="details">
-    <div class="wanderung">
-      <a href={"/hikes/" + hike._id}>{hike.wanderung}</a>
-    </div>
-    <div>
-      <strong>Kanton:</strong>
-      {hike.canton}
-    </div>
-    <div>
-      Kilometer: {hike.kilometer} km
-    </div>
-    <div>
-      Aufstieg: {hike.elevation_up} m, Abstieg: {hike.elevation_down} m
-    </div>
-    <div>
-      Dauer: {hike.dauer}
-    </div>
-    <div>
-      Schwierigkeit: {hike.TrailAdventurer_difficulty}
-    </div>
-    <div>
-      Nutzerbewertung: {Array.from(
-        { length: Math.round(hike.user_rating) },
-        () => "⭐",
-      ).join("")} ({hike.user_rating.toFixed(1)})
-    </div>
-    <div>
-      Höhenangst {hike.vertigo_safe ? "erlaubt" : "nicht erlaubt"}
-    </div>
+  <div class="card-body">
+    <h5 class="card-title text-success fw-bold">
+      <a href={"/hikes/" + hike._id} class="text-decoration-none text-success">
+        {hike.wanderung}
+      </a>
+    </h5>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <strong>Kanton:</strong>
+        {hike.canton}
+      </li>
+      <li class="list-group-item">
+        <strong>Kilometer:</strong>
+        {hike.kilometer} km
+      </li>
+      <li class="list-group-item">
+        <strong>Aufstieg:</strong>
+        {hike.elevation_up} m, <strong>Abstieg:</strong>{" "}
+        {hike.elevation_down} m
+      </li>
+      <li class="list-group-item">
+        <strong>Dauer:</strong>
+        {hike.dauer}
+      </li>
+      <li class="list-group-item">
+        <strong>Schwierigkeit:</strong>
+        {hike.TrailAdventurer_difficulty}
+      </li>
+      <li class="list-group-item">
+        <strong>Nutzerbewertung:</strong>{" "}
+        {Array.from({ length: Math.round(hike.user_rating) }, () => "⭐").join(
+          "",
+        )}{" "}
+        ({hike.user_rating.toFixed(1)})
+      </li>
+      <li class="list-group-item">
+        <strong>Höhenangst:</strong>{" "}
+        {hike.vertigo_safe ? "erlaubt" : "nicht erlaubt"}
+      </li>
+    </ul>
 
-    {#if hike.favorite}
-      <form method="POST" action="?/removeFromFavorites" use:enhance>
-        <input type="hidden" name="id" value={hike._id} />
-        <button class="btn btn-danger">Als zu tun markieren</button>
-      </form>
-    {:else}
-      <form method="POST" action="?/addToFavorites" use:enhance>
-        <input type="hidden" name="id" value={hike._id} />
-        <button class="btn btn-success">Als erledigt markieren</button>
-      </form>
-    {/if}
+    <div class="mt-3">
+      {#if hike.favorite}
+        <form method="POST" action="?/removeFromFavorites" use:enhance>
+          <input type="hidden" name="id" value={hike._id} />
+          <button class="btn btn-danger w-100">Aus Favoriten entfernen</button>
+        </form>
+      {:else}
+        <form method="POST" action="?/addToFavorites" use:enhance>
+          <input type="hidden" name="id" value={hike._id} />
+          <button class="btn btn-success w-100">Zu Favoriten hinzufügen</button>
+        </form>
+      {/if}
+    </div>
   </div>
 </div>
 
 <style>
-  .hike-card {
-    border: 2px solid #4caf50;
-    height: 100%;
-    background-color: black;
-    color: #8bc34a;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  .details {
-    padding: 1em;
-  }
-  .wanderung a {
-    font-weight: bold;
-    color: #ffd700;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  .wanderung a:hover {
-    text-decoration: underline;
-    color: #ffc107;
-  }
-  .btn {
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .btn.btn-danger {
-    background-color: #d9534f;
-    color: white;
-  }
-  .btn.btn-success {
-    background-color: #5cb85c;
-    color: white;
-  }
-  .btn:hover {
-    opacity: 0.9;
-  }
+  @import "bootstrap/dist/css/bootstrap.min.css";
+  @import "../../routes/styles.css"; /* Ensure correct relative path */
 </style>

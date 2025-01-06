@@ -9,77 +9,39 @@
 	crossorigin="anonymous"
 />
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="/">
-			<img
-				src="/videos/bonfire.gif"
-				alt="Bonfire"
-				style="width: 40px; height: 40px; margin-right: 10px;"
-			/>
+			<img src="/videos/bonfire.gif" alt="Bonfire" class="navbar-icon" />
 			{title}
 		</a>
-		<div class="d-flex gap-2">
-			<button
-				class="btn"
-				on:click={() => (window.location.href = "/hikes")}
-				>Alle Wanderungen</button
-			>
-			<button
-				class="btn"
-				on:click={() => (window.location.href = "/challenges")}
-				>Herausforderungen</button
-			>
-			<button
-				class="btn ai-button"
-				on:click={() => (window.location.href = "/openai_integration")}
-				>Wanderung mit AI finden</button
-			>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarNav"
+			aria-controls="navbarNav"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="navbar-nav ms-auto gap-2">
+				<a href="/hikes" class="btn btn-outline-success"
+					>Alle Wanderungen</a
+				>
+				<a href="/challenges" class="btn btn-outline-success"
+					>Herausforderungen</a
+				>
+				<a href="/openai_integration" class="btn btn-success ai-button"
+					>Wanderung mit AI finden</a
+				>
+			</div>
 		</div>
 	</div>
 </nav>
 
 <style>
-	.navbar {
-		background-color: #000;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-	}
-
-	.navbar-brand {
-		font-size: 1.5rem;
-		font-weight: bold;
-		text-transform: uppercase;
-		letter-spacing: 1.5px;
-		color: #4caf50 !important;
-		display: flex;
-		align-items: center;
-	}
-
-	.btn {
-		background-color: white;
-		color: #4caf50;
-		border: none;
-		padding: 0.5rem 1.5rem;
-		border-radius: 5px;
-		font-size: 1rem;
-		font-weight: bold;
-		transition:
-			background-color 0.3s ease,
-			color 0.3s ease;
-	}
-
-	.btn:hover {
-		background-color: #45a049;
-		color: white;
-	}
-
-	.ai-button {
-		background-color: #4caf50;
-		color: white;
-	}
-
-	.ai-button:hover {
-		background-color: #45a049;
-		color: white;
-	}
+	@import "../../routes/styles.css"; /* Adjust the path as needed */
 </style>
