@@ -153,6 +153,8 @@ body {
     font-weight: 600;
 }
 
+
+
 /* Hike Card Styles */
 .hike-card {
     border: 2px solid #4caf50;
@@ -179,7 +181,7 @@ body {
 
 /* Card Image */
 .card-img-top {
-    max-height: 200px;
+    max-height: 400px;
     object-fit: cover;
 }
 
@@ -206,18 +208,6 @@ body {
     /* Slight zoom effect */
     opacity: 0.9;
     /* Subtle opacity change */
-}
-
-.btn-danger {
-    background-color: #d9534f;
-    /* Bootstrap danger red */
-    border-color: #d9534f;
-}
-
-.btn-success {
-    background-color: #5cb85c;
-    /* Bootstrap success green */
-    border-color: #5cb85c;
 }
 
 /* Card Title Link */
@@ -291,8 +281,6 @@ body {
     color: white;
 }
 
-
-/* Footer Styles */
 
 /* Hike Details Styles */
 .hike-details {

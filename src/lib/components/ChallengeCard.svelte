@@ -76,7 +76,7 @@
                 src={challenge.badge_image}
                 alt="Badge für {challenge.name}"
                 class="rounded-circle shadow-lg img-fluid"
-                style="max-width: 150px; max-height: 150px;"
+                style="max-width: 200px; max-height: 200px;"
             />
             <p class="mt-3 fw-bold text-success">Verdienter Erfolg!</p>
         </div>
