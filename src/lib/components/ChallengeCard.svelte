@@ -1,7 +1,6 @@
 <script>
     export let challenge;
 
-    // Determine the progress bar classes based on the challenge status
     const getProgressBarClass = (status) => {
         return status === "achieved"
             ? "bg-success text-white sparkle-effect"
@@ -85,5 +84,5 @@
 
 <style>
     @import "bootstrap/dist/css/bootstrap.min.css";
-    @import "../../routes/styles.css"; /* Updated path to src/routes/styles.css */
+    @import "../../routes/styles.css";
 </style>

@@ -1,7 +1,7 @@
 <script>
-  import { enhance } from "$app/forms";
+  import { enhance } from "$app/forms"; // Import the 'enhance' function
 
-  let { hike } = $props();
+  let { hike } = $props(); // Destructure the 'hike' prop, which is passed to the component
 </script>
 
 <div class="card hike-card shadow-lg border-success">
